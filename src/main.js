@@ -21,6 +21,7 @@ function initialize() {
         event.preventDefault()
 
         if (isValidForm(v$)) {
+            console.log('Credit received')
         }
     })
 
