@@ -136,13 +136,11 @@ label {
 
 .input-error {
   display: none;
-  color: $burgundyLighten1;
-  margin-top: 10px;
+  @extend %input-error;
 }
 
 .form-error {
   input {
-    border-color: $burgundyLighten1 !important;
-    outline: $burgundyLighten1 !important;
+    @extend %form-error;
   }
 }
