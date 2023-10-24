@@ -4,8 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="device=device-width initial-scale=1">
     <title>Credit Calculator</title>
+    <link href="../src/assets/scss/style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-
+<main class="credit-page">
+    <div class="credit-page__container">
+        <div class="credit-calculator">
+            <div class="credit-calculator__wrapper">
+                <div class="credit-calculator__title">
+                    Credit Calculator
+                </div>
+                <form class="credit-calculator__form">
+                    <div class="credit-calculator__amount">
+                        <label for="credit-amount">Credit amount (UAH)</label>
+                        <input type="number" id="credit-amount" value="1000" step="100">
+                        <div class="input-error"></div>
+                    </div>
+                    <div class="credit-calculator__period">
+                        <label for="repayment-period">Repayment period (Days)</label>
+                        <input type="number" id="repayment-period" value="7" step="1">
+                        <div class="input-error"></div>
+                    </div>
+                    <div class="credit-calculator__get-credit">
+                        <button id="get-credit-btn">Get credit</button>
+                    </div>
+                </form>
+                <div class="credit-calculator__repayment-amount">
+                    <span class="credit-calculator__repayment-title">
+                        Repayment Amount
+                    </span>
+                    <div class="credit-calculator__daily-amount">
+                        Daily repayments:
+                        <span></span> UAH
+                    </div>
+                    <div class="credit-calculator__total-amount">
+                        Total repayments:
+                        <span></span> UAH
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<script src="../src/main.js" type="module"></script>
+<script src="../src/services/computed-errors.js" type="module"></script>
 </body>
 </html>

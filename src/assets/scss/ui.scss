@@ -1,0 +1,21 @@
+@mixin after-effect-btn($opacity) {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  opacity: $opacity;
+}
+
+%input-error {
+  color: $burgundyLighten1;
+  margin-top: 10px;
+}
+
+%form-error {
+  border-color: $burgundyLighten1 !important;
+  outline: $burgundyLighten1 !important;
+}
